@@ -6,7 +6,7 @@
 
 }
 body {
-  width: 100%;
+  width: 100vw;
   background-color: black;
 
 }
@@ -16,10 +16,7 @@ body {
   background-image: url(assests/images/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(
-    1100px,
-    100vw
-  ); /* to resize the background and make it responsive*/
+  background-size: max(1100px,100vw); /* to resize the background and make it responsive*/
   position: relative;
 }
 
@@ -43,7 +40,7 @@ nav {
 
 nav img {
   color: red;
-  width: 130px;
+  width: 11.5vw;
   position: relative;
   z-index: 10;
 }
@@ -67,18 +64,18 @@ nav button {
 }
 .hero > :first-child {
   /*First span in the block*/
-  font-size: 48px;
+  font-size: 3.5vw;
   font-weight: 900;
   text-align: center;
 }
 .hero > :nth-child(2) {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.3vw;
   text-align: center;
 }
 .hero > :nth-child(3) {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2vw;
   text-align: center;
 }
 .seperation {
@@ -89,7 +86,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
 }
 .btn {
   font-family: "Poppins", sans-serif;
@@ -100,26 +97,29 @@ nav button {
   background-color: rgba(248, 243, 243, 0.021);
   border: 1px solid rgba(255, 255, 255, 0.568);
   border-radius:4px ;
-  font-size: 20px;
+  font-size: 1.8vw;
   cursor: pointer;
 }
 .main input {
-  font-family: "Poppins", sans-serif;
-  border: 0px;
-  padding: 7px 101px 8px 14px;
-  border-radius: 5px;
- 
-  font-size: 12px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.637);
-  border: 1px solid rgba(255, 255, 255, 0.692);
+  width: 22vw;
+    height: 3.5vh;
+    font-family: "Poppins", sans-serif;
+    border: 0px;
+    padding: 2px 14px 2px 14px;
+    border-radius: 5px;
+    font-size: 0.8vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    border: 1px solid rgba(255, 255, 255, 0.692);
 }
 .btn-red {
-  padding: 3px 24px;
-  background-color: red;
-  color: white;
-  border-radius: 5px;
-  font-size: 20px;
+  height: 4.3vh;
+    width: 11vw;
+    padding: 2px 4px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1vw;
 }
 .btn-red-sm {
   background-color: red;
@@ -133,29 +133,26 @@ nav button {
   justify-content: center;
   align-items: center;
   color: white;
-  max-width: 75vw;
+  max-width: 85vw;
   margin: auto;
   margin-top: 110px;
   margin-bottom: 110px;
 }
-
-
-
-
-
 .secImg{
   position: relative;
 }
 .secImg img{
-  width: 542px;
+  width: 40vw;
   position: relative;
   z-index: 9;
 }
-.secImg video{
-  height: 250px;
-  position: absolute;
-  top: 115px;
-  right: 63px;
+
+.secImg video {
+    width: 33vw;
+    /* height: 250px; */
+    position: absolute;
+    top: 8vw;
+    right: 63px;
 }
 .first> div{
   display: flex;
@@ -163,19 +160,20 @@ nav button {
   padding: 34px;
 }
 .first> div :nth-child(1){
-  font-size: 48px;
+  font-size: 3.25vw;
   font-weight: bolder;
 }
 .first> div :nth-child(2){
-  font-size: 24px;
+  font-size: 1.6vw;
   font-weight: bolder;
   }
-    .faq {
+
+.faq {
      padding: 20px;
       background-color: black;
       color: white;
      font-family: 'Martel Sans'
-    }
+}
 .faqbox{
   display: flex;
   background-color: #2d2d2d;
@@ -225,19 +223,6 @@ nav button {
   margin-left: 15vw;
   margin-bottom: 100px;
 }
-@media screen  and (max-width:1300px) {
-  .footer{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen  and (max-width:1300px) {
-  .first{
-    flex-wrap: wrap;
-  }
- 
-
-}
 
 .footer-items{
   display: flex;
@@ -255,4 +240,75 @@ footer> :first-child{
 footer a{
   font-size: 14px;
   color: white;
+}
+
+@media screen  and (max-width:1435px) {
+  
+.first {
+  
+  max-width: 85vw;
+  margin: auto;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+}
+
+@media screen  and (max-width:1300px) {
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
+  .secImg img{
+    width: 80vw;
+    
+  }
+  .secImg video {
+    width: 67.5vw;
+    top: 12vw;
+    right: 63px;
+  }
+  .first{
+    flex-wrap: wrap;
+  }
+  .first> div {
+    display: flex;
+    flex-direction: column;
+    padding: 21px;
+}
+}
+
+
+
+@media screen  and (max-width:700px) {
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
+  .secImg img{
+    width: 80vw;
+    
+  }
+  .secImg video {
+    width: 58.5vw;
+    top: 16vw;
+    right: 63px;
+  }
+}
+
+
+@media screen and (max-width:465px) {
+ 
+nav img {
+  
+  width: 110px;
+ 
+}
+.btn {
+  
+  padding: 3px 14px;
+}
+.btn-red {
+   width: 13vw;
+ 
+}
+
+  
 }
